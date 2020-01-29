@@ -1,0 +1,95 @@
+/*resetando alguns metodos*/
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    background: rgb(219, 219, 250);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;}
+#logotipo {
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+    
+}
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 9px;
+}
+.header ul {
+    margin-right: 10px;
+}
+.container {
+    background: red;
+    height: auto;
+    background-image: url(/imagens/imgcontainer.jpg);
+    background-attachment: fixed; /*fixa a imagem, para não rolar*/
+    background-repeat: no-repeat;
+}
+.txtcontainer h1, h2 {
+    margin: 0px;
+    color: white;
+    text-align: center; 
+}
+.txtcontainer h1 {      
+    font-size: 6vw;
+    padding-top: 10%;
+}
+.txtcontainer h2 {
+    font-size: 3vw;
+    padding-bottom: 10%;
+}
+.sobremim {
+    background-color: orangered;
+    height: auto;
+}
+.sobremim h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+.sobremim section {
+    padding: 0px 40px 40px 40px;
+    text-align: justify;
+}
+.portfolio {
+    background-color: blue;
+}
+.meugithub {
+    background-color: pink;
+}
+.contato {
+    background-color: rgb(19, 196, 19);
+}
+.rodape {
+    background-color: rgb(196, 216, 16);
+}
