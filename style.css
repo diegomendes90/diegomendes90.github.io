@@ -51,7 +51,7 @@ body {
 .container {
     background: red;
     height: auto;
-    background-image: url(/imagens/imgcontainer.jpg);
+    background-image: url(/imgcontainer.jpg);
     background-attachment: fixed; /*fixa a imagem, para não rolar*/
     background-repeat: no-repeat;
 }
