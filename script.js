@@ -3,12 +3,15 @@ var selecaoraca = window.document.getElementById('selecaoraca')
 var cor = window.document.getElementById('colornamedog')
 var namedog = window.document.getElementById('namedog')
 var fontgoogle = window.document.getElementById('fontgoogle')
+var ultimoacesso = window.document.getElementById('ultimoacesso')
+var agora = new Date()
 
 /*Pegar valores em localStorage*/
 namedog.value = localStorage.getItem('namedog')
 selecaoraca.value = localStorage.getItem('selecaoraca')
 colornamedog.value = localStorage.getItem('colornamedog')
 fontgoogle.value = localStorage.getItem('fontgoogle')
+ultimoacesso.innerHTML = `Ultima consulta: ${localStorage.getItem('agora')}`
 
 /*Funcão que altera classe das Tags
 para pode estilizar conforme CSS*/
@@ -48,6 +51,7 @@ function salvarlocalstorage() {
     localStorage.setItem("colornamedog", colornamedog.value)
     localStorage.setItem("namedog", namedog.value)
     localStorage.setItem("fontgoogle", fontgoogle.value)
+    localStorage.setItem("agora", agora)
     
     alert('Informações salvas em localStorage com sucesso!')
     limpar()
